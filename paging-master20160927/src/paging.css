@@ -1,0 +1,87 @@
+.ui-paging-container {
+    color: #666;
+    font-size: 12px;
+}
+
+.ui-paging-container ul {
+    overflow: hidden;
+    text-align: center;
+}
+
+.ui-paging-container ul, .ui-paging-container li {
+    list-style: none;
+}
+
+.ui-paging-container li {
+    display: inline-block;
+    padding: 7px 12px;
+    /*margin-left: -1px;*/
+    color: #337ab7;
+}
+
+.ui-paging-container li.ui-pager {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-left: 0;
+    border-radius: 2px;
+    vertical-align: top;
+}
+.ui-paging-container li.ui-pager.js-page-first{
+    border-left: 1px solid #ddd;
+}
+
+.ui-paging-container li.ui-pager:hover, .ui-paging-container li.focus {
+    background-color: #337ab7;
+    border: 1px solid #337ab7;
+    color: #FFFFFF;
+    margin-left: -1px;
+}
+
+.ui-paging-container li.ui-paging-ellipse {
+    border: none;
+}
+
+.ui-paging-container li.ui-paging-toolbar {
+    padding: 0;
+    margin-left: 10px;
+}
+
+.ui-paging-container li.ui-paging-toolbar select {
+    /*height: 22px;*/
+    border: 1px solid #ddd;
+    color: #666;
+    padding: 6px 0;
+}
+
+.ui-paging-container li.ui-paging-toolbar input {
+    /*line-height: 20px;*/
+    /*height: 20px;*/
+    padding: 7px 0;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 30px;
+    margin: 0 0 0 5px;
+    vertical-align: top;
+
+}
+
+.ui-paging-container li.ui-paging-toolbar a {
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #ddd;
+    vertical-align: top;
+    border-radius: 2px;
+    line-height: 20px;
+    padding: 5px 8px;
+    cursor: pointer;
+    margin-left: 5px;
+    color: #666;
+}
+
+.ui-paging-container li.ui-pager-disabled, .ui-paging-container li.ui-pager-disabled:hover {
+    display: none;
+    background-color: #f6f6f6;;
+    cursor: default;
+    border: none;
+    color: #ddd;
+}

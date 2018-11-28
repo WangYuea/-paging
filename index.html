@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="pager.css"/>
+    <script src="./jquery-1.9.1.min.js"></script>
+    <script src="pager.js"></script>
+    <title>pages</title>
+</head>
+<body>
+<div class='page-box'>
+    <ul class="pagination" id="page2">
+    </ul>
+    <div class='select-box'>
+        <select name="" class="selector">
+            <option value="5">5条/页</option>
+            <option selected value="10">10条/页</option>
+            <option value="20">20条/页</option>
+            <option value="30">30条/页</option>
+        </select>
+    </div>
+    <div class="pageJump">
+        <span>跳转到</span>
+        <input type="text"/>
+        <span>页</span>
+        <button type="button" class="button">确定</button>
+    </div>
+
+</div>
+<script>
+
+    Page({
+        total:101,//总数
+        startnum: 1,				//起始页
+        pageNumber: $(".selector option:selected").val(),//一页条数，获取的是下拉框默认的
+        elem: $('#page2'),		//指定的元素
+        selectelem: $('.selector'),//选择一页多少条下拉框元素
+        callback: function (opt,n) {	//回调函数 n当前页数
+            console.log(opt);
+            console.log(n);
+        }
+    });
+</script>
+</body>
+</html>
