@@ -109,10 +109,10 @@
 			this.settings.callback && this.settings.callback(this.current, this.pagesize, this.pagecount);
 		},
 		changePagesize: function(ps) {
-            this.settings.callback && this.settings.callback(this.current, ps, this.pagecount);
 			this.render({
 				pagesize: ps
 			});
+			this.settings.callback && this.settings.callback(this.current, this.pagesize, this.pagecount);
 		},
 		format: function() {
 			var html = '<ul>'
